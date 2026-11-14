@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fcfcfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a19" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Signaux">
+<title>Signaux de marché</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icone-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="entete">
+  <div>
+    <h1>Signaux de marché</h1>
+    <p id="date-donnees" class="discret">Chargement…</p>
+    <p id="etat-maj" class="maj"></p>
+  </div>
+  <div class="entete-droite">
+    <span id="pastille-regime" class="pastille"></span>
+    <button id="bouton-guide" class="rond" aria-label="Ouvrir le guide">?</button>
+  </div>
+</header>
+<main id="contenu" aria-live="polite"></main>
+<nav class="onglets" aria-label="Sections">
+  <button data-onglet="aujourdhui" class="actif"><svg viewBox="0 0 24 24"><path d="M4 13h4v7H4zM10 4h4v16h-4zM16 9h4v11h-4z"/></svg>Aujourd'hui</button>
+  <button data-onglet="portefeuille"><svg viewBox="0 0 24 24"><path d="M3 7h18v12H3zM8 7V5h8v2M3 12h18"/></svg>Portefeuille</button>
+  <button data-onglet="marche"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Marché</button>
+  <button data-onglet="modele"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 4-7 5 5M3 21h18"/></svg>Modèle</button>
+  <button data-onglet="actus"><svg viewBox="0 0 24 24"><path d="M4 5h13v14H4zM17 9h3v10h-3M7 9h7M7 12.5h7M7 16h4"/></svg>Actus</button>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>

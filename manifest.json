@@ -1,0 +1,16 @@
+{
+  "name": "Signaux de marché",
+  "short_name": "Signaux",
+  "description": "Aide à la décision : probabilités, risque et portefeuille.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcfcfb",
+  "theme_color": "#fcfcfb",
+  "icons": [
+    {"src": "icone-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icone-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}
